@@ -28,7 +28,6 @@ DEFAULT CHARSET=utf8
 COLLATE=utf8_general_ci;
 ");
 $website = "http://lordbingo.co.uk";
-$websiteParts = parse_url($website);
 $seen = [];
 
 
@@ -54,6 +53,7 @@ function crawl_page($url, $depth = 1){
         return;
     }
 
+    // add the url to an array to skip it next time, we want to crawl urls only once
     $seen[$url] = true;
 
     $dom = new DOMDocument('1.0');

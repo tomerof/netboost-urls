@@ -1,0 +1,14 @@
+{
+    "name": "tomer/netboost-crawler",
+    "require": {
+        "usmanhalalit/pixie": "^2.0",
+        "ext-dom": "*",
+        "ext-curl": "*"
+    },
+    "authors": [
+        {
+            "name": "Tomer Ofer",
+            "email": "tomerofer@gmail.com"
+        }
+    ]
+}
